@@ -23,11 +23,13 @@ public class Airplane {
                 "Fuel: " + fuel);
     }
 
-    static public void compareAirplanes(Airplane comparable1, Airplane comparable2) {
-        if (comparable1.length > comparable2.length)
+    public static void compareAirplanes(Airplane comparable1, Airplane comparable2) {
+        if (comparable1.getLength() > comparable2.getLength())
             System.out.println(comparable1.producer + " bigger then " + comparable2.producer);
-        else
+        else if (comparable1.getLength() < comparable2.getLength())
             System.out.println(comparable2.producer + " bigger then " + comparable1.producer);
+        else
+            System.out.println("Airplanes has same length");
     }
 
     public void fillUp(int inputFuel) {
