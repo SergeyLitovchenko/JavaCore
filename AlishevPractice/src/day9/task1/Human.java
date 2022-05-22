@@ -1,14 +1,10 @@
-package day9;
+package day9.task1;
 
 public class Human {
-    private String name;
+    protected String name;
 
     public Human(String name) {
         this.name = name;
-    }
-
-    public void printInfo(){
-
     }
 
     public String getName() {
@@ -17,5 +13,10 @@ public class Human {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void printInfo(){
+        System.out.println("This man named " + name);
+
     }
 }

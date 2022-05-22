@@ -1,8 +1,15 @@
-package day9;
+package day9.task1;
 
 public class Task1 {
     public static void main(String[] args) {
-        Human human = new Human("Mark");
+        Student student = new Student("Mark","312");
+        Teacher teacher = new Teacher("Katy", "Math");
+
+        System.out.println(student.getGroupName());
+        System.out.println(teacher.getSubjectName());
+
+        student.printInfo();
+        teacher.printInfo();
     }
 }
 /*
