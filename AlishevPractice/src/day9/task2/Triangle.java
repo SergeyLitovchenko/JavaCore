@@ -1,18 +1,23 @@
 package day9.task2;
 
-public class Triangle extends Figure{
+public class Triangle extends Figure {
+    private double a, b, c;
 
-    public Triangle(String color) {
+    public Triangle(double a, double b, double c, String color) {
         super(color);
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
     @Override
     public double area() {
-        return 0;
+        double halfPerimeter = perimeter() / 2;
+        return  Math.sqrt(halfPerimeter * (halfPerimeter - a) * (halfPerimeter - b) * (halfPerimeter - c));
     }
 
     @Override
     public double perimeter() {
-        return 0;
+        return a + b + c;
     }
 }
