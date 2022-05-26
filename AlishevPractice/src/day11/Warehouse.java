@@ -2,13 +2,13 @@ package day11;
 
 public class Warehouse {
     private int balance;
-    private int countOrders;
+    private int countOrder;
 
     @Override
     public String toString() {
         return "Warehouse{" +
                 "balance=" + balance +
-                ", countOrder=" + countOrders +
+                ", countOrder=" + countOrder +
                 '}';
     }
 
@@ -20,11 +20,11 @@ public class Warehouse {
         this.balance = balance;
     }
 
-    public int getCountOrders() {
-        return countOrders;
+    public int getCountOrder() {
+        return countOrder;
     }
 
-    public void setCountOrders(int countOrders) {
-        this.countOrders = countOrders;
+    public void setCountOrder(int countOrder) {
+        this.countOrder = countOrder;
     }
 }

@@ -15,13 +15,13 @@ public class Picker implements Worker {
     @Override
     public void doWork() {
         salary += 80;
-        warehouse.setCountOrders(warehouse.getCountOrders() + 1);
+        warehouse.setCountOrder(warehouse.getCountOrder() + 1);
 
     }
 
     @Override
     public void bonus() {
-        if (warehouse.getCountOrders() > 1500)
+        if (warehouse.getCountOrder() > 1500)
             salary *= 3;
     }
 
