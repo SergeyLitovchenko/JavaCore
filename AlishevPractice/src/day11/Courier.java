@@ -15,13 +15,14 @@ public class Courier implements Worker {
     @Override
     public void doWork() {
         salary += 100;
-       warehouse.setBalance(warehouse.getBalance() + 1000);
+        warehouse.setBalance(warehouse.getBalance() + 1000);
 
     }
 
     @Override
     public void bonus() {
-
+        if (warehouse.getBalance() > 1_000_000)
+            salary *= 2;
     }
 
     @Override
