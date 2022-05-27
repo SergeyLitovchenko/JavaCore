@@ -15,7 +15,7 @@ public class Task1 {
 
         System.out.println(list);
 
-        list.add(2,"Mercedes");
+        list.add(2, "Mercedes");
         System.out.println(list);
 
         list.remove(0);
